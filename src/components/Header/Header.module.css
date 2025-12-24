@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--pad) calc(var(--pad) * 1.5);
+  background: white;
+  border-bottom: 1px solid var(--gray2);
+  height: calc(var(--pad) * 4);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--pad) * 0.75);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+}
+
+.logoIcon {
+  width: calc(var(--pad) * 2);
+  height: calc(var(--pad) * 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color7), var(--color9));
+  color: white;
+  border-radius: calc(var(--pad) * 0.5);
+  font-size: var(--fontSize7);
+}
+
+.logoText {
+  font-size: var(--fontSize6);
+  font-weight: 700;
+  color: var(--gray10);
+  letter-spacing: -0.5px;
+}

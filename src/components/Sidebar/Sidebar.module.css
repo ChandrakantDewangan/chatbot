@@ -1,0 +1,60 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: min(300px, 25vw);
+  min-width: 250px;
+  background: white;
+  border-right: 1px solid var(--gray2);
+  height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  padding: var(--pad);
+  border-bottom: 1px solid var(--gray2);
+}
+
+.newChatButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--pad) * 0.5);
+  padding: calc(var(--pad) * 0.75);
+  background: var(--color7);
+  color: white;
+  border: none;
+  border-radius: calc(var(--pad) * 0.5);
+  font-size: var(--fontSize5);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.newChatButton:hover {
+  background: var(--color8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 99, 195, 0.3);
+}
+
+.newChatButton:active {
+  transform: translateY(0);
+}
+
+.buttonIcon {
+  width: calc(var(--pad) * 1.25);
+  height: calc(var(--pad) * 1.25);
+}
+
+.modelSection {
+  padding: var(--pad);
+  border-bottom: 1px solid var(--gray2);
+}
+
+.historySection {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}

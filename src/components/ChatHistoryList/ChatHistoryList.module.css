@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  padding: var(--pad);
+  border-bottom: 1px solid var(--gray2);
+}
+
+.title {
+  font-size: var(--fontSize5);
+  font-weight: 600;
+  color: var(--gray9);
+}
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+  padding: calc(var(--pad) * 0.5);
+}
+
+.sessionItem {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--pad) * 0.75);
+  width: 100%;
+  padding: calc(var(--pad) * 0.75);
+  background: transparent;
+  border: none;
+  border-radius: calc(var(--pad) * 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.sessionItem:hover {
+  background: var(--gray1);
+}
+
+.sessionItem.active {
+  background: var(--color2);
+}
+
+.sessionIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--pad) * 2.5);
+  height: calc(var(--pad) * 2.5);
+  border-radius: 50%;
+  background: var(--gray2);
+  color: var(--gray7);
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.sessionItem:hover .sessionIcon {
+  background: var(--color3);
+  color: var(--color8);
+}
+
+.sessionItem.active .sessionIcon {
+  background: var(--color7);
+  color: white;
+}
+
+.sessionIcon svg {
+  width: calc(var(--pad) * 1.25);
+  height: calc(var(--pad) * 1.25);
+}
+
+.sessionContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--pad) * 0.25);
+  overflow: hidden;
+}
+
+.sessionName {
+  font-size: var(--fontSize5);
+  font-weight: 500;
+  color: var(--gray9);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sessionMeta {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--pad) * 0.25);
+  font-size: var(--fontSize4);
+  color: var(--gray6);
+}
+
+.clockIcon {
+  width: calc(var(--pad) * 0.875);
+  height: calc(var(--pad) * 0.875);
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: calc(var(--pad) * 2);
+  text-align: center;
+}
+
+.emptyIcon {
+  width: calc(var(--pad) * 4);
+  height: calc(var(--pad) * 4);
+  color: var(--gray4);
+  margin-bottom: var(--pad);
+}
+
+.emptyText {
+  font-size: var(--fontSize5);
+  color: var(--gray5);
+}

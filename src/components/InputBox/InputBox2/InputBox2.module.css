@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--pad) * 0.75);
+  width: 100%;
+  max-width: min(90%, 800px);
+  background: var(--gray1);
+  border: 1px solid var(--gray3);
+  border-radius: var(--pad);
+  padding: var(--pad);
+  transition: all 0.2s ease;
+}
+
+.inputWrapper:focus-within {
+  border-color: var(--color7);
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 99, 195, 0.1);
+}
+
+.textarea {
+  border: none;
+  outline: none;
+  font-size: var(--fontSize5);
+  font-family: inherit;
+  resize: none;
+  background: transparent;
+  min-height: calc(var(--pad) * 3);
+  max-height: calc(var(--pad) * 15);
+  overflow-y: auto;
+}
+
+.textarea::placeholder {
+  color: var(--gray5);
+}
+
+.sendButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--pad) * 0.5);
+  background: var(--color7);
+  color: white;
+  border: none;
+  border-radius: calc(var(--pad) * 0.5);
+  padding: calc(var(--pad) * 0.75) calc(var(--pad) * 1.5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-end;
+  font-size: var(--fontSize5);
+  font-weight: 600;
+}
+
+.sendButton:hover:not(:disabled) {
+  background: var(--color8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 99, 195, 0.3);
+}
+
+.sendButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.sendButton:disabled {
+  background: var(--gray4);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.sendButton svg {
+  width: calc(var(--pad) * 1.25);
+  height: calc(var(--pad) * 1.25);
+}
+
+.buttonText {
+  font-size: var(--fontSize5);
+}

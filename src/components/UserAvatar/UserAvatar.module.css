@@ -1,0 +1,119 @@
+.container {
+  position: relative;
+}
+
+.avatarButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.avatar {
+  width: calc(var(--pad) * 2.5);
+  height: calc(var(--pad) * 2.5);
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color7), var(--color9));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fontSize5);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatarButton:hover .avatar {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 99, 195, 0.3);
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + calc(var(--pad) * 0.5));
+  right: 0;
+  background: white;
+  border: 1px solid var(--gray2);
+  border-radius: calc(var(--pad) * 0.5);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  min-width: 220px;
+  z-index: 1000;
+  animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdownHeader {
+  padding: var(--pad);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--pad) * 0.25);
+}
+
+.userName {
+  font-size: var(--fontSize5);
+  font-weight: 600;
+  color: var(--gray9);
+}
+
+.userEmail {
+  font-size: var(--fontSize4);
+  color: var(--gray6);
+}
+
+.dropdownDivider {
+  height: 1px;
+  background: var(--gray2);
+}
+
+.dropdownItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: calc(var(--pad) * 0.75);
+  padding: calc(var(--pad) * 0.75) var(--pad);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: var(--fontSize5);
+  color: var(--gray9);
+  transition: all 0.2s ease;
+  text-align: left;
+  font-family: inherit;
+}
+
+.dropdownItem:hover {
+  background: var(--gray1);
+}
+
+.dropdownIcon {
+  width: calc(var(--pad) * 1.25);
+  height: calc(var(--pad) * 1.25);
+  color: var(--gray7);
+}
+
+.logoutItem {
+  color: #e53e3e;
+}
+
+.logoutItem .dropdownIcon {
+  color: #e53e3e;
+}
+
+.logoutItem:hover {
+  background: #fff5f5;
+}

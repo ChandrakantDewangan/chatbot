@@ -1,0 +1,72 @@
+:root {
+  --color1: #f5f5f5;
+  --color2: #e6f7ff;
+  --color3: #9dd4f5;
+  --color4: #6fb8e8;
+  --color5: #469bdb;
+  --color6: #217ecf;
+  --color7: #0063c3;
+  --color8: #0958d9;
+  --color9: #00499c;
+  --color10: #003eb3;
+  --color11: #003375;
+  --color12: #00204f;
+  --color13: #000f29;
+
+  --gray1: #f5f5f5;
+  --gray2: #e8e8e8;
+  --gray3: #d9d9d9;
+  --gray4: #bfbfbf;
+  --gray5: #ababab;
+  --gray6: #8c8c8c;
+  --gray7: #737373;
+  --gray8: #595959;
+  --gray9: #404040;
+  --gray10: #262626;
+
+  --fontSize1: 0.2rem;
+  --fontSize2: 0.4rem;
+  --fontSize3: 0.6rem;
+  --fontSize4: 0.8rem;
+  --fontSize5: 1rem;
+  --fontSize6: 1.2rem;
+  --fontSize7: 1.4rem;
+  --fontSize8: 1.6rem;
+  --fontSize9: 1.8rem;
+  --fontSize10: 2rem;
+  --fontSize11: 3rem;
+  --fontSize12: 4rem;
+  --fontSize13: 5rem;
+  --fontSize14: 6rem;
+  --fontSize15: 7rem;
+  --fontSize16: 8rem;
+  --fontSize17: 9rem;
+
+  --pad: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--fontSize5);
+  line-height: 1.5;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
